@@ -12,25 +12,18 @@ Solving Advent of Code puzzles in C++ for fun and learning! 🎄
 
 ## Building and Running
 
-### Using the build script (recommended):
+### Compile and run:
 ```bash
-./build.sh 1          # Build day 1
-./day01/part1 day01/input.txt
-./day01/part2 day01/input.txt
+g++ -std=c++17 day<day_number>/part<part_number>.cpp -o day<day_number>/part<part_number>
+./day<day_number>/part<part_number> day<day_number>/input.txt
 ```
 
-### Using Make:
+### Example for Day 1:
 ```bash
-make day01            # Build day 1
+g++ -std=c++17 day01/part1.cpp -o day01/part1
 ./day01/part1 day01/input.txt
-./day01/part2 day01/input.txt
-```
 
-### Direct compilation:
-```bash
-g++ -std=c++17 -O2 day01/part1.cpp -o day01/part1
-g++ -std=c++17 -O2 day01/part2.cpp -o day01/part2
-./day01/part1 day01/input.txt
+g++ -std=c++17 day01/part2.cpp -o day01/part2
 ./day01/part2 day01/input.txt
 ```
 
