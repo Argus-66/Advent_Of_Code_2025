@@ -24,11 +24,6 @@ void part1(const vector<string>& lines) {
     cout<<pass<<endl;
 }
 
-void part2(const vector<string>& lines) {
-    // TODO: Implement part 2
-    cout << "Part 2: " << endl;
-}
-
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         cerr << "Usage: " << argv[0] << " <input_file>" << endl;
@@ -47,9 +42,6 @@ int main(int argc, char* argv[]) {
         lines.push_back(line);
     }
     file.close();
-
-    part1(lines);
-    //part2(lines);
 
     return 0;
 }
