@@ -12,19 +12,20 @@ Solving Advent of Code puzzles in C++ for fun and learning! 🎄
 
 ## Building and Running
 
-### Compile and run:
 ```bash
-g++ -std=c++17 day<day_number>/part<part_number>.cpp -o day<day_number>/part<part_number>
-./day<day_number>/part<part_number> day<day_number>/input.txt
+cd day<day_number>
+g++ -std=c++17 part<part_number>.cpp -o part<part_number>
+./part<part_number> input.txt
 ```
 
 ### Example for Day 1:
 ```bash
-g++ -std=c++17 day01/part1.cpp -o day01/part1
-./day01/part1 day01/input.txt
+cd day01
+g++ -std=c++17 part1.cpp -o part1
+./part1 input.txt
 
-g++ -std=c++17 day01/part2.cpp -o day01/part2
-./day01/part2 day01/input.txt
+g++ -std=c++17 part2.cpp -o part2
+./part2 input.txt
 ```
 
 ## Quick Start
