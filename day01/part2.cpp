@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void part1(const vector<string>& lines) {
-    // TODO: Implement part 1
-    cout << "Part 1: " << endl;
+void part2(const vector<string>& lines) {
+    // TODO: Implement part 2
+    cout << "Part 2: " << endl;
 
     long long ans=50;
     int pass=0;
@@ -42,6 +42,8 @@ int main(int argc, char* argv[]) {
         lines.push_back(line);
     }
     file.close();
+
+    part2(lines);
 
     return 0;
 }
