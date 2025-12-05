@@ -9,7 +9,6 @@ Solving Advent of Code puzzles in C++ for fun and learning! 🎄
    - `part1.cpp` - Part 1 solution
    - `part2.cpp` - Part 2 solution
    - `input.txt` - Your puzzle input (download from adventofcode.com)
-   - `example.txt` - Example input from the problem description
 
 ## Building and Running
 
