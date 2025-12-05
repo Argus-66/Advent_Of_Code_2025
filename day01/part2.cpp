@@ -12,14 +12,21 @@ void part2(const vector<string>& lines) {
     for(string s:lines){
         int num = stoi(s.substr(1));
         
-
+        // Count complete rotations
+        pass += num / 100;
+        
+        int temp = ans;  // Use temp to preserve ans for checking
+        
         if(s[0]=='L'){          // Subtraction condition
+            // Check if partial rotation crosses 0
+            if(temp - (num % 100) < 0) pass++;
             ans = (ans - num + 100) % 100;
         } 
         else{                   // Addition condition
+            // Check if partial rotation crosses 0
+            if((num % 100) + temp >= 100) pass++;
             ans = (ans + num) % 100;
         }
-        if(ans==0) pass++;
     } 
     cout<<pass<<endl;
 }
